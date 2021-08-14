@@ -211,18 +211,6 @@ h6 {
   }
 }
 
-/* !!! THIS WILL BE PADDING BETWEEN SECTIONS !!! */
-
-/* .contact-page-form {
-  margin-bottom: 52px;
-} */
-
-@media screen and (min-width: 768px) {
-  /* .contact-page-form {
-    margin-bottom: 76px;
-  } */
-}
-
 .contact-heading {
   margin-bottom: 28px;
   font-weight: 700;
@@ -230,6 +218,27 @@ h6 {
   line-height: 1.25;
   text-transform: uppercase;
   color: #487996;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-heading {
+    font-size: 24px;
+  }
+
+  .contact-heading-center {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 59px;
+  }
+
+  .contact-page-form {
+    width: 420px;
+    margin: 0 auto;
+  }
+
+  .contact-form-field {
+    width: 100%;
+  }
 }
 
 .contact-form-field {
@@ -282,6 +291,7 @@ h6 {
   height: 199px;
   border-radius: 50px 0px;
   border: 1px solid #487996;
+  resize: none;
 }
 
 .contact-form-field__textarea:focus {
@@ -341,9 +351,27 @@ h6 {
   border-color: transparent;
 }
 
-/* .contact-our-contacts {
-  margin-bottom: 52px;
-} */
+@media screen and (min-width: 768px) {
+  .contact-form-button {
+    display: flex;
+    margin: 0;
+    margin-left: auto;
+  }
+
+  .contact-form-field:nth-child(4n + 1) {
+    margin-bottom: 44px;
+    height: 40px;
+  }
+
+  .contact-list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .contact-list-point-3 {
+    text-align: right;
+  }
+}
 
 .contact-list {
   padding: 0;
