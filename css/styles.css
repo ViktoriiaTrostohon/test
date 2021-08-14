@@ -39,6 +39,50 @@ h6 {
   }
 }
 
+.contact-hero-section {
+  padding-top: 32px;
+  padding-bottom: 52px;
+}
+
+.contact-form-section {
+  padding-bottom: 52px;
+}
+
+.contact-contacts-section {
+  padding-bottom: 76px;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-hero-section {
+    padding-top: 44px;
+  }
+
+  .contact-form-section {
+    padding-bottom: 76px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .contact-hero-section {
+    padding-top: 24px;
+    padding-bottom: 100px;
+  }
+
+  .contact-form-section {
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+
+  .contact-contacts-section {
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+
+  .hybrid-section-desktop {
+    padding-bottom: 100px;
+  }
+}
+
 .contact-hero-title {
   margin-bottom: 16px;
   font-weight: 700;
@@ -167,11 +211,18 @@ h6 {
   }
 }
 
-/* NO NEED TO CENTER IT ON MOBILE */
+/* !!! THIS WILL BE PADDING BETWEEN SECTIONS !!! */
 
-.contact-page-form {
+/* .contact-page-form {
   margin-bottom: 52px;
+} */
+
+@media screen and (min-width: 768px) {
+  /* .contact-page-form {
+    margin-bottom: 76px;
+  } */
 }
+
 .contact-heading {
   margin-bottom: 28px;
   font-weight: 700;
