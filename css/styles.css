@@ -7,147 +7,129 @@ h6 {
   margin: 0;
 }
 
-.video-player {
-  max-width: 767px;
-  position: relative;
-  overflow: hidden;
-}
-
-/* .video-player:hover .player-controls {
-  transform: translateY(0);
-} */
-
-.video {
-  width: 100%;
-
-  border-radius: 15px;
-}
-
-/* .player-controls {
-  visibility: hidden;
-  pointer-events: none;
-  opacity: 0;
-  position: absolute;
-} */
-
-/* .video-player:hover .player-controls {
-  display: flex;
-  bottom: 25px;
-  left: 5px;
-  width: 97%;
-  transform: translateY(100%) translateY(-5px);
-  flex-wrap: wrap;
-  background: rgba(0, 0, 0, 0.6);
-  border-radius: 15px;
-  visibility: visible;
-  opacity: 1;
-  pointer-events: auto;
-  transition: transform 1000 ms cubic-bezier(0.4, 0, 0.2, 1),
-    opacity 1000 ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 1000 ms cubic-bezier(0.4, 0, 0.2, 1);
-} */
-
-/* .play-button {
-  width: 10%;
-  border-color: transparent;
-  font-size: large;
+.contact-hero-title {
+  margin-bottom: 16px;
   font-weight: 700;
-  line-height: 0;
-  background-color: rgba(255, 255, 255, 0.8);
-  border-radius: 15px;
+  font-size: 24px;
+  line-height: 1.25;
+  text-transform: uppercase;
   color: #487996;
 }
 
-.play-button:hover {
-  background-color: white;
-}
-
-.volume[type="range"] {
-  -webkit-appearance: none;
-  background: transparent;
-}
-
-.volume[type="range"]:focus {
-  outline: none;
-}
-
-.volume[type="range"]::-webkit-slider-runnable-track {
-  height: 10px;
-  border-radius: 15px;
-  cursor: pointer;
-  background: #487996;
-}
-
-.volume[type="range"]::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  height: 10px;
-  width: 15px;
-  border-radius: 15px;
-  background: white;
-  cursor: pointer;
-}
-
-.time {
-  font-size: 16px;
-  color: white;
-  margin-left: auto;
-} */
-
-.contact-hero-title {
-  display: flex;
-  justify-content: center;
+.hero-video {
   margin-bottom: 16px;
 }
 
-/* IT WILL ALIGN ACCORDING TO CONTAINER */
-.contact-hero-text {
+.hero-video__player {
+  width: 100%;
+
+  border-radius: 15px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* .hero-video__player[poster] {
+  height: 90%;
+} */
+
+.contact-hero__text {
   margin-top: 0;
   margin-bottom: 16px;
   font-weight: 300;
   font-size: 16px;
   line-height: 1.25;
+  color: #2b2b2b;
 }
-/* NO NEED TO CENTER IT ON MOBILE */
 
-.contact-hero-text-icon {
+.contact-hero__text--icon {
   display: flex;
 }
 
-.contact-hero-text-icon::after {
+.contact-hero__text--icon::after {
   content: " ";
   display: inline-block;
-  background: url(../images/contact-emoji/phone/emoji@2x.jpg);
+  background: url(../images/contact-emoji/phone/emoji@2x.jpg),
+    url(../images/contact-emoji/phone/emoji.jpg);
   background-size: cover;
   width: 22px;
   height: 22px;
   margin-left: 6px;
 }
 
-.contact-hero-icon {
-  width: 22px;
-  height: 22px;
-  margin-left: 4px;
+@media screen and (min-width: 768px) {
+  .contact-hero-title {
+    margin-bottom: 24px;
+    font-size: 36px;
+  }
 }
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
-  .video-player {
-    /* text-align: center; */
-    margin-bottom: 16px;
+@media screen and (min-width: 1440px) {
+  .contact-hero-title {
+    font-size: 48px;
+  }
+}
+
+/* BEM CLASS */
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding-left: 60px;
+    padding-right: 60px;
   }
 
-  /* .video-settings {
-    width: 100%;
-    max-width: 280px;
-    height: 171px;
+  .contact-hero {
+    display: flex;
+    margin-bottom: 52px;
+  }
+
+  .hero-video {
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+
+  .contact-hero__text:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .hero-video {
+    margin-right: 32px;
+    width: 515px;
+  }
+
+  .hero-video__player[poster] {
+    background: url(../images/hero/desktop/hero@2x.jpg);
+  }
+
+  .contact-hero__description {
+    width: 515px;
+  }
+}
+
+/* IT WILL ALIGN ACCORDING TO CONTAINER */
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1440px) {
+  .contact-hero__text {
+    font-size: 18px;
+    margin-bottom: 24px;
+  }
+
+  /* .contact-hero__text:last-child {
+    margin-bottom: 57px;
   } */
 
-  .contact-hero-text {
-    text-align: left;
+  .contact-hero__text--icon {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-hero__text--icon::after {
+    margin-left: 0;
+    margin-top: 57px;
   }
 }
 
-@media screen and (max-width: 1023px) {
-  .volume {
-    display: none;
-  }
-}
+/* NO NEED TO CENTER IT ON MOBILE */
