@@ -57,7 +57,74 @@
       <section>
         <div class="container">
           <div class="contact-us">
-            <form action=""></form>
+            <form class="contact-page-form" action="#">
+              <h2 class="contact-heading">ЗВ’ЯЖІТЬСЯ З НАМИ</h2>
+              <div class="contact-form-field">
+                <input
+                  class="contact-form-field__input"
+                  type="text"
+                  name="user-name"
+                  id="name"
+                  placeholder=" "
+                  minlength="2"
+                  pattern="[a-zA-Zа-яёА-ЯЁ]+"
+                  title="Ім'я повинно містити символи латиниці або кирилиці"
+                  required
+                />
+                <label for="name" class="contact-form-field__label">Ім'я</label>
+              </div>
+
+              <div class="contact-form-field">
+                <input
+                  class="contact-form-field__input"
+                  type="email"
+                  name="user-email"
+                  id="email"
+                  placeholder=" "
+                  required
+                />
+                <label for="email" class="contact-form-field__label"
+                  >Email</label
+                >
+              </div>
+
+              <div class="contact-form-field">
+                <textarea
+                  class="contact-form-field__textarea"
+                  name="user-comment"
+                  id="contact-textarea"
+                  placeholder="Залишіть своє повідомлення"
+                ></textarea>
+                <label
+                  for="contact-textarea"
+                  class="contact-form-field__label textarea-label"
+                  >Повідомлення</label
+                >
+              </div>
+              <div class="contact-form-field">
+                <label
+                  for="file"
+                  class="
+                    contact-form-field__label contact-form-field__label--grey
+                  "
+                  >*Прикріпіть зображення / креслення / STL / Obj / CAD-модель
+                  <input
+                    class="contact-form-field__file visually-hidden"
+                    type="file"
+                    name="file"
+                    id="file"
+                  />
+                  <svg class="contact-form-icon" width="22" height="20">
+                    <use href="./images/sprite.svg#icon-paper-clip"></use>
+                  </svg>
+                </label>
+              </div>
+
+              <button type="submit" class="contact-form-button">
+                ВІДПРАВИТИ
+              </button>
+            </form>
+
             <ul>
               <li>
                 <h2></h2>
