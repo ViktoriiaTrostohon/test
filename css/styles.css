@@ -110,10 +110,6 @@ ol {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-/* .hero-video__player[poster] {
-  height: 90%;
-} */
-
 .contact-hero__text {
   margin-top: 0;
   margin-bottom: 16px;
@@ -130,8 +126,7 @@ ol {
 .contact-hero__text--icon::after {
   content: " ";
   display: inline-block;
-  background: url(../images/contact-emoji/phone/emoji@2x.jpg),
-    url(../images/contact-emoji/phone/emoji.jpg);
+  background: url(../images/contact-emoji/phone/emoji@2x.jpg);
   background-size: cover;
   width: 22px;
   height: 22px;
@@ -154,11 +149,6 @@ ol {
 /* BEM CLASS */
 
 @media screen and (min-width: 768px) {
-  .container {
-    padding-left: 60px;
-    padding-right: 60px;
-  }
-
   .contact-hero {
     display: flex;
     margin-bottom: 52px;
@@ -182,13 +172,8 @@ ol {
     max-width: 700px;
   }
 
-  .hero-video__player[poster] {
-    background: url(../images/hero/desktop/hero@2x.jpg);
-  }
-
   .contact-hero__description {
     width: 515px;
-    /* max-width: 700px; */
   }
 }
 
@@ -203,10 +188,6 @@ ol {
     margin-bottom: 24px;
   }
 
-  /* .contact-hero__text:last-child {
-    margin-bottom: 57px;
-  } */
-
   .contact-hero__text--icon {
     display: flex;
     flex-direction: column;
@@ -214,10 +195,16 @@ ol {
 
   .contact-hero__text--icon::after {
     margin-left: 0;
-    margin-top: 57px;
+    margin-top: 45px;
+    background: url(../images/contact-emoji/desktop/emoji.jpg);
+    width: 49px;
+    height: 49px;
   }
 }
 
+/* END HERO */
+
+/* START SECTION WITH FORM */
 .contact-heading {
   margin-bottom: 28px;
   font-weight: 700;
@@ -412,10 +399,52 @@ ol {
   }
 }
 
-/* .contact-list__item--bottom-geometry:not(:last-child) {
-  margin-bottom: 24px;
-} */
-
 .contact-list__item--inner-geometry {
   margin-bottom: 8px;
+}
+
+@media screen and (min-width: 1440px) {
+  .hybrid-section-desktop {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding-left: 189px;
+    padding-right: 189px;
+  }
+
+  .container-hybrid {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .contact-list {
+    flex-direction: column;
+  }
+
+  .contact-list__item {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.11;
+  }
+  .contact-list-point-1,
+  .contact-list-point-2 {
+    margin-bottom: 68px;
+  }
+
+  .contact-list-point-3 {
+    text-align: left;
+  }
+
+  .contact-our-contacts,
+  .contact-form-field {
+    width: 515px;
+  }
+
+  .contact-page-form {
+    width: 515px;
+  }
+
+  .desktop-break {
+    display: none;
+  }
 }
