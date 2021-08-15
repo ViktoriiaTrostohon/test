@@ -7,6 +7,13 @@ h6 {
   margin: 0;
 }
 
+ul,
+ol {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -393,9 +400,21 @@ h6 {
   text-transform: none;
 }
 
-.contact-list__item--bottom-geometry:not(:last-child) {
+.contact-list-point-1,
+.contact-list-point-2 {
   margin-bottom: 24px;
 }
+
+@media screen and (min-width: 768px) {
+  .contact-list-point-1,
+  .contact-list-point-2 {
+    margin-bottom: 0;
+  }
+}
+
+/* .contact-list__item--bottom-geometry:not(:last-child) {
+  margin-bottom: 24px;
+} */
 
 .contact-list__item--inner-geometry {
   margin-bottom: 8px;
