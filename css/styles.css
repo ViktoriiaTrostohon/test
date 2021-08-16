@@ -27,16 +27,56 @@ ol {
   overflow: hidden;
 }
 
-.phone-fig-1 {
-  position: absolute;
-  height: 73.65px;
-  width: 73.65px;
-  left: -29px;
-  top: 302.61px;
-  background: #ffffff;
-  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
-  border-radius: 0px 0px 35px 0px;
-  mix-blend-mode: hue;
+@media screen and (min-width: 320px) {
+  .phone-fig-12 {
+    position: absolute;
+    height: 73.65px;
+    width: 73.65px;
+    left: -29px;
+    top: 302.61px;
+    background: #ffffff;
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+    border-radius: 0px 0px 35px 0px;
+    mix-blend-mode: hue;
+  }
+
+  .phone-fig-67 {
+    position: absolute;
+    height: 73.65px;
+    width: 73.65px;
+    top: 1359.84px;
+    right: 0;
+    background: #ffffff;
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+    border-radius: 0px 0px 0px 25px;
+    mix-blend-mode: hue;
+  }
+
+  .phone-fig-68 {
+    position: absolute;
+    height: 60px;
+    width: 73px;
+    top: 990px;
+    right: 0;
+    background: #ffffff;
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+    border-radius: 0px 0px 25px 25px;
+    transform: rotate(90deg);
+    mix-blend-mode: hue;
+  }
+
+  .phone-fig-63 {
+    position: absolute;
+    height: 73.65px;
+    width: 50px;
+    top: 500px;
+    right: 0;
+    background: #ffffff;
+
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+    border-radius: 72px 0 0 72px;
+    mix-blend-mode: hue;
+  }
 }
 
 .container {
