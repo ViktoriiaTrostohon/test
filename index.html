@@ -33,7 +33,20 @@
         <div class="container">
           <h1 class="contact-hero-title">Контакти</h1>
           <div class="contact-hero">
-            <div class="hero-video">
+            <div class="contact-hero-background">
+              <img src="./images/play-button.png" alt="play" class="play-btn" onclick="playVideo('videos/3d-print-timelapse.mp4')">
+            </div>
+
+
+            <div class="video-player" id="videoPlayer">
+  <video class="video-hero" controls id="myVideo" autoplay>
+  <source src="./videos/3d-print-timelapse.mp4" type="video/mp4"></source>
+  </video>
+  
+  <img src="./images/clarity_window-close-line.png" alt="close" class="close-btn" onclick="stopVideo()">
+
+</div>
+            <!-- <div class="hero-video">
               <video class="hero-video__player" controls="controls">
                 <source
                   src="./videos/3d-print-timelapse.mp4"
@@ -49,7 +62,7 @@
                 />
                 Ваш браузер не підтримує формат відео
               </video>
-            </div>
+            </div> -->
             <div class="contact-hero__description">
               <p class="contact-hero__text">
                 Людина уперше побачивши процес 3D друку може легко захопитися
@@ -201,7 +214,30 @@
       </section>
       </div>
       </div>
+
+<div class="video-player">
+  <video width="100%" controls autoplay>
+  <source src="./videos/3d-print-timelapse.mp4" type="video/mp4"></source>
+  </video>
+</div>
+
+
     </main>
     <footer></footer>
+
+
+    <script>
+      var videoPlayer = document.getElementById("videoPlayer");
+      var myVideo = document.getElementById("myVideo");
+
+      function stopVideo(){
+        videoPlayer.style.display = "none";
+      }
+
+      function playVideo(file){
+        myVideo.src = file;
+        videoPlayer.style.display = "block";
+      }
+    </script>
   </body>
 </html>
