@@ -332,11 +332,6 @@ ol {
   }
 }
 
-/* IT WILL ALIGN ACCORDING TO CONTAINER */
-
-@media screen and (min-width: 768px) {
-}
-
 @media screen and (min-width: 1440px) {
   .contact-hero__text {
     font-size: 18px;
